@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de Arquivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .icon {
+            font-size: 60px;
+            color: #6c5ce7;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #2d3436;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #636e72;
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #6c5ce7;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+        }
+
+        .btn-download:hover {
+            background-color: #5b4bc4;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(108, 92, 231, 0.6);
+        }
+
+        .btn-download:active {
+            transform: translateY(1px);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #b2bec3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">📥</div>
+        
+        <h1>Seu arquivo está pronto!</h1>
+        <p>Clique no botão abaixo para iniciar o download direto do arquivo armazenado de forma segura no Google Drive.</p>
+        
+        <a href="https://drive.google.com/uc?export=download&id=1zGkwDzxZQTG5Zl3hrIA5Me-2xQWC4La7" class="btn-download">
+            Baixar Arquivo
+        </a>
+
+        <div class="footer">
+            Link seguro via Google Drive.
+        </div>
+    </div>
+
+</body>
+</html>
