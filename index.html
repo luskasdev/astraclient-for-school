@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download de Arquivo</title>
+    <title>Download de Arquivos</title>
     <style>
         * {
             margin: 0;
@@ -14,26 +14,27 @@
 
         body {
             background: linear-gradient(135deg, #74b9ff, #a29bfe);
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
         .container {
             background-color: white;
-            padding: 40px;
+            padding: 40px 30px;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 400px;
-            width: 90%;
+            max-width: 450px;
+            width: 100%;
         }
 
         .icon {
-            font-size: 60px;
+            font-size: 50px;
             color: #6c5ce7;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         h1 {
@@ -42,30 +43,55 @@
             margin-bottom: 10px;
         }
 
-        p {
+        .description {
             color: #636e72;
             font-size: 14px;
             margin-bottom: 30px;
             line-height: 1.5;
         }
 
+        .download-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
         .btn-download {
-            display: inline-block;
-            background-color: #6c5ce7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             color: white;
             text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 30px;
+            padding: 15px 20px;
+            border-radius: 8px;
             font-weight: bold;
             font-size: 16px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
         }
 
-        .btn-download:hover {
+        /* Estilo do botão Client */
+        .btn-client {
+            background-color: #0984e3;
+            box-shadow: 0 4px 12px rgba(9, 132, 227, 0.3);
+        }
+
+        .btn-client:hover {
+            background-color: #076bba;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(9, 132, 227, 0.4);
+        }
+
+        /* Estilo do botão Textura */
+        .btn-textura {
+            background-color: #6c5ce7;
+            box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+        }
+
+        .btn-textura:hover {
             background-color: #5b4bc4;
             transform: translateY(-2px);
-            box-shadow: 0 7px 20px rgba(108, 92, 231, 0.6);
+            box-shadow: 0 6px 15px rgba(108, 92, 231, 0.4);
         }
 
         .btn-download:active {
@@ -73,7 +99,7 @@
         }
 
         .footer {
-            margin-top: 25px;
+            margin-top: 30px;
             font-size: 11px;
             color: #b2bec3;
         }
@@ -84,15 +110,21 @@
     <div class="container">
         <div class="icon">📥</div>
         
-        <h1>Seu arquivo está pronto!</h1>
-        <p>Clique no botão abaixo para iniciar o download direto do arquivo armazenado de forma segura no Google Drive.</p>
+        <h1>Downloads Disponíveis</h1>
+        <p class="description">Selecione abaixo o componente que deseja baixar. Os links iniciam o download direto com segurança.</p>
         
-        <a href="https://drive.google.com/uc?export=download&id=1zGkwDzxZQTG5Zl3hrIA5Me-2xQWC4La7" class="btn-download">
-            Baixar Arquivo
-        </a>
+        <div class="download-box">
+            <a href="https://drive.google.com/uc?export=download&id=1zGkwDzxZQTG5Zl3hrIA5Me-2xQWC4La7" class="btn-download btn-client">
+                <span>📦</span> Baixar Client
+            </a>
+
+            <a href="https://drive.google.com/uc?export=download&id=1P_ENBKYpfmDGHocatdTNzCzorLrmgNrW" class="btn-download btn-textura">
+                <span>🎨</span> Baixar Textura
+            </a>
+        </div>
 
         <div class="footer">
-            Link seguro via Google Drive.
+            Links diretos e seguros via Google Drive.
         </div>
     </div>
 
